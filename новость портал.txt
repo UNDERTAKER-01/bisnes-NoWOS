@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>ФинСосо — Новостной портал</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .container {
+            width: 1000px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        /* Шапка */
+        .header {
+            background: #2c3e50;
+            color: white;
+            padding: 10px 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        /* Меню навигации */
+        .nav {
+            background: #2980b9;
+            padding: 5px 20px;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+        .nav a:hover {
+            background: #3498db;
+            border-radius: 3px;
+        }
+
+        /* Баннер */
+        .banner {
+            width: 100%;
+            height: 150px;
+            background: url('https://via.placeholder.com/1000x150?text=Панорама+города') no-repeat center;
+            background-size: cover;
+            position: relative;
+        }
+
+        /* Поиск */
+        .search {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            background: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.2);
+        }
+        .search input {
+            padding: 5px;
+            border: 1px solid #ccc;
+            width: 200px;
+        }
+        .search button {
+            padding: 5px 10px;
+            background: #2980b9;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Логин/регистрация */
+        .login-box {
+            position: absolute;
+            top: 60px;
+            left: 20px;
+            background: rgba(255,255,255,0.9);
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.2);
+        }
+        .login-box a {
+            color: #2980b9;
+            text-decoration: underline;
+            margin: 0 5px;
+        }
+        .login-box input {
+            padding: 3px;
+            margin: 5px 0;
+            width: 120px;
+        }
+
+        /* Приветствие */
+        .welcome {
+            padding: 10px 20px;
+            background: #ecf0f1;
+            border-top: 1px solid #bdc3c7;
+            border-bottom: 1px solid #bdc3c7;
+        }
+        .welcome a {
+            color: #e74c3c;
+            text-decoration: underline;
+        }
+
+        /* Основной контент */
+        .main-content {
+            display: flex;
+            padding: 10px 0;
+        }
+
+        /* Левая колонка */
+        .sidebar {
+            width: 250px;
+            padding: 0 10px;
+        }
+
+        .sidebar-section {
+            background: #3498db;
+            color: white;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+        }
+        .sidebar-section h3 {
+            margin-top: 0;
+            font-size: 16px;
+        }
+        .sidebar-section ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .sidebar-section li {
+            padding: 5px 0;
+        }
+        .sidebar-section a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 5px 10px;
+        }
+        .sidebar-section a:hover {
+            background: #2980b9;
+            border-radius: 3px;
+        }
+
+        /* Центральная колонка */
+        .content {
+            flex: 1;
+            padding: 0 10px;
+        }
+
+        .news-header {
+            background: #2c3e50;
+            color: white;
+            padding: 5px 10px;
+            margin-bottom: 10px;
+        }
+
+        .featured-news {
+            display: flex;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            overflow: hidden;
+        }
+
+        .featured-image {
+            width: 400px;
+            height: 250px;
+            background: url('https://via.placeholder.com/400x250?text=Хоккеист') no-repeat center;
+            background-size: cover;
+        }
+
+        .featured-text {
+            padding: 10px;
+            background: #ecf0f1;
+            width: 300px;
+        }
+
+        .news-item {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            background: #f9f9f9;
+            margin-bottom: 5px;
+            border: 1px solid #eee;
+        }
+        .news-item img {
+            width: 60px;
+            height: 60px;
+            object-fit: cover;
+            margin-right: 10px;
+        }
+        .news-item .date {
+            font-size: 12px;
+            color: #7f8c8d;
+            margin-bottom: 5px;
+        }
+        .news-item .title {
+            font-weight: bold;
+            margin: 0;
+        }
+
+        /* Вкладки */
+        .tabs {
+            display: flex;
+            background: #ecf0f1;
+            margin: 10px 0;
+        }
+        .tabs a {
+            padding: 5px 15px;
+            text-decoration: none;
+            color: #2c3e50;
+            font-weight: bold;
+        }
+        .tabs a.active {
+            background: #2980b9;
+            color: white;
+        }
+
+        /* Правая колонка */
+        .right-sidebar {
+            width: 250px;
+            padding: 0 10px;
+        }
+
+        .weather-clock {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .weather-clock img {
+            width: 150px;
+            height: 150px;
+            margin-bottom: 10px;
+        }
+        .weather-clock p {
+            font-size: 14px;
+            line-height: 1.4;
+        }
+
+        .ads {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 5px;
+        }
+        .ad {
+            background: #eee;
+            padding: 5px;
+            text-align: center;
+            font-size: 12px;
+        }
+        .ad img {
+            width: 100%;
+            height: 80px;
+            object-fit: cover;
+        }
+
+        /* Подсказка VIP */
+        .vip-alert {
+            background: #f39c12;
+            color: #fff;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+        }
+        .vip-alert a {
+            color: #fff;
+            text-decoration: underline;
+        }
+        .vip-alert .more {
+            display: block;
+            text-align: right;
+            margin-top: 5px;
+            color: #e74c3c;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Шапка -->
+        <div class="header">ФинСосо — Новостной портал</div>
+
+        <!-- Меню -->
+        <div class="nav">
+            <a href="#">Главная</a>
+            <a href="#">Новости</a>
+            <a href="#">Объявления</a>
+            <a href="#">Фирмы</a>
+            <a href="#">Работа</a>
+            <a href="#">Блоги</a>
+            <a href="#">Форум</a>
+            <a href="#">Фото</a>
+            <a href="#">Пользователи</a>
+            <a href="#">Викторина</a>
+            <a href="#">Конкурсы</a>
+            <a href="#">Игры</a>
+        </div>
+
+        <!-- Баннер -->
+        <div class="banner">
+            <!-- Поиск -->
+            <div class="search">
+                <input type="text" placeholder="Что ищем?">
+                <button>??</button>
+            </div>
+
+            <!-- Логин -->
+            <div class="login-box">
+                <a href="#">Регистрация</a> | <a href="#">Забыли пароль?</a><br>
+                <input type="text" placeholder="Логин">
+                <input type="password" placeholder="Пароль">
+                <button>??</button>
+            </div>
+        </div>
+
+        <!-- Приветствие -->
+        <div class="welcome">
+            ?? Добро пожаловать! <a href="#">Зарегистрируйтесь</a> и Вам станут доступны все функции портала.
+        </div>
+
+        <!-- Основной контент -->
+        <div class="main-content">
+
+            <!-- Левая колонка -->
+            <div class="sidebar">
+
+                <!-- VIP объявления -->
+                <div class="sidebar-section">
+                    <h3>VIP объявления</h3>
+                    <div class="vip-alert">
+                        Нет объявлений для отображения.<br>
+                        <a href="#">Как повысить эффективность своего объявления?</a>
+                        <span class="more">все объявления »</span>
+                    </div>
+                </div>
+
+                <!-- Рубрики объявлений -->
+                <div class="sidebar-section">
+                    <h3>Рубрики объявлений</h3>
+                    <ul>
+                        <li><a href="#">Автомобили</a></li>
+                        <li><a href="#">Бытовая техника</a></li>
+                        <li><a href="#">Животные</a></li>
+                        <li><a href="#">Знакомства</a></li>
+                        <li><a href="#">Мебель</a></li>
+                        <li><a href="#">Недвижимость</a></li>
+                        <li><a href="#">Одежда, обувь</a></li>
+                        <li><a href="#">Работа</a></li>
+                        <li><a href="#">Услуги</a></li>
+                    </ul>
+                </div>
+
+                <!-- Рубрики фотогалереи -->
+                <div class="sidebar-section">
+                    <h3>Рубрики фотогалереи</h3>
+                    <ul>
+                        <li><a href="#">Автомобили</a></li>
+                        <li><a href="#">Общий альбом</a></li>
+                    </ul>
+                </div>
+
+                <!-- Новые конкурсы -->
+                <div class="sidebar-section">
+                    <h3>Новые конкурсы</h3>
+                    <img src="https://via.placeholder.com/230x100?text=Конкурс+на+фото" alt="Конкурс" style="width:100%; margin-top:5px;">
+                </div>
+
+            </div>
+
+            <!-- Центральная колонка -->
+            <div class="content">
+
+                <!-- Заголовок новостей -->
+                <div class="news-header">Новости</div>
+
+                <!-- Главная новость -->
+                <div class="featured-news">
+                    <div class="featured-image"></div>
+                    <div class="featured-text">
+                        <div class="news-item" style="background:#7f8c8d; color:white; padding:10px; margin-bottom:5px;">
+                            <img src="https://via.placeholder.com/60x60?text=Хоккей" alt="Хоккей">
+                            <div>
+                                <div class="date">16 мая 2013</div>
+                                <div class="title">Словаки победили сборную США и вышли в плей-офф ЧМ-2013</div>
+                            </div>
+                        </div>
+                        <div class="news-item" style="background:#9b59b6; color:white; padding:10px; margin-bottom:5px;">
+                            <img src="https://via.placeholder.com/60x60?text=Демченко" alt="Демченко">
+                            <div>
+                                <div class="date">16 мая 2013</div>
+                                <div class="title">Саночник Альберт Демченко испытал сочинскую трассу</div>
+                            </div>
+                        </div>
+                        <div class="news-item" style="background:#34495e; color:white; padding:10px; margin-bottom:5px;">
+                            <img src="https://via.placeholder.com/60x60?text=Футбол" alt="Футбол">
+                            <div>
+                                <div class="date">16 мая 2013</div>
+                                <div class="title">Футбол. Лига Европы. Объявлены стартовые составы</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Вкладки -->
+                <div class="tabs">
+                    <a href="#" class="active">Новости спорта</a>
+                    <a href="#">Новости кино</a>
+                    <a href="#">Новости политики</a>
+                </div>
+
+                <!-- Новости -->
+                <div class="news-grid" style="display:grid; grid-template-columns: repeat(3, 1fr); gap:10px;">
+                    <div class="news-item">
+                        <img src="https://via.placeholder.com/60x60?text=Терек" alt="Терек">
+                        <div>
+                            <div class="date">31 мая 2013</div>
+                            <div class="title">"Терек" получил нового тренера</div>
+                        </div>
+                    </div>
+                    <div class="news-item">
+                        <img src="https://via.placeholder.com/60x60?text=Спартак" alt="Спартак">
+                        <div>
+                            <div class="date">31 мая 2013</div>
+                            <div class="title">"Спартак" предлагает шесть миллионов евро за Тино Косту</div>
+                        </div>
+                    </div>
+                    <div class="news-item">
+                        <img src="https://via.placeholder.com/60x60?text=Олимпиада" alt="Олимпиада">
+                        <div>
+                            <div class="date">31 мая 2013</div>
+                            <div class="title">Покурить на Олимпиаде в Сочи не удастся</div>
+                        </div>
+                    </div>
+                    <div class="news-item">
+                        <img src="https://via.placeholder.com/60x60?text=Карлос" alt="Карлос">
+                        <div>
+                            <div class="date">31 мая 2013</div>
+                            <div class="title">Роберто Карлос договорился о контракте с турецким клубом</div>
+                        </div>
+                    </div>
+                    <div class="news-item">
+                        <img src="https://via.placeholder.com/60x60?text=Кокорин" alt="Кокорин">
+                        <div>
+                            <div class="date">31 мая 2013</div>
+                            <div class="title">
