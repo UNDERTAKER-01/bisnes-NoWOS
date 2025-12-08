@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>ФинСосо — Новостной портал</title>
+    <title>Р РѕСЃСЃРёР№СЃРєР°СЏ Р±РёСЂР¶Р° вЂ” РќРѕРІРѕСЃС‚РЅРѕР№ РїРѕСЂС‚Р°Р»</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -17,7 +17,7 @@
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
 
-        /* Шапка */
+        /* РЁР°РїРєР° */
         .header {
             background: #2c3e50;
             color: white;
@@ -26,7 +26,7 @@
             font-weight: bold;
         }
 
-        /* Меню навигации */
+        /* РњРµРЅСЋ РЅР°РІРёРіР°С†РёРё */
         .nav {
             background: #2980b9;
             padding: 5px 20px;
@@ -43,16 +43,16 @@
             border-radius: 3px;
         }
 
-        /* Баннер */
+        /* Р‘Р°РЅРЅРµСЂ */
         .banner {
             width: 100%;
             height: 150px;
-            background: url('https://via.placeholder.com/1000x150?text=Панорама+города') no-repeat center;
+            background: url('https://via.placeholder.com/1000x150?text=РџР°РЅРѕСЂР°РјР°+РіРѕСЂРѕРґР°') no-repeat center;
             background-size: cover;
             position: relative;
         }
 
-        /* Поиск */
+        /* РџРѕРёСЃРє */
         .search {
             position: absolute;
             top: 10px;
@@ -75,7 +75,7 @@
             cursor: pointer;
         }
 
-        /* Логин/регистрация */
+        /* Р›РѕРіРёРЅ/СЂРµРіРёСЃС‚СЂР°С†РёСЏ */
         .login-box {
             position: absolute;
             top: 60px;
@@ -96,7 +96,7 @@
             width: 120px;
         }
 
-        /* Приветствие */
+        /* РџСЂРёРІРµС‚СЃС‚РІРёРµ */
         .welcome {
             padding: 10px 20px;
             background: #ecf0f1;
@@ -108,13 +108,13 @@
             text-decoration: underline;
         }
 
-        /* Основной контент */
+        /* РћСЃРЅРѕРІРЅРѕР№ РєРѕРЅС‚РµРЅС‚ */
         .main-content {
             display: flex;
             padding: 10px 0;
         }
 
-        /* Левая колонка */
+        /* Р›РµРІР°СЏ РєРѕР»РѕРЅРєР° */
         .sidebar {
             width: 250px;
             padding: 0 10px;
@@ -150,7 +150,7 @@
             border-radius: 3px;
         }
 
-        /* Центральная колонка */
+        /* Р¦РµРЅС‚СЂР°Р»СЊРЅР°СЏ РєРѕР»РѕРЅРєР° */
         .content {
             flex: 1;
             padding: 0 10px;
@@ -173,7 +173,7 @@
         .featured-image {
             width: 400px;
             height: 250px;
-            background: url('https://via.placeholder.com/400x250?text=Хоккеист') no-repeat center;
+            background: url('https://via.placeholder.com/400x250?text=РҐРѕРєРєРµРёСЃС‚') no-repeat center;
             background-size: cover;
         }
 
@@ -207,7 +207,7 @@
             margin: 0;
         }
 
-        /* Вкладки */
+        /* Р’РєР»Р°РґРєРё */
         .tabs {
             display: flex;
             background: #ecf0f1;
@@ -224,7 +224,7 @@
             color: white;
         }
 
-        /* Правая колонка */
+        /* РџСЂР°РІР°СЏ РєРѕР»РѕРЅРєР° */
         .right-sidebar {
             width: 250px;
             padding: 0 10px;
@@ -261,7 +261,7 @@
             object-fit: cover;
         }
 
-        /* Подсказка VIP */
+        /* РџРѕРґСЃРєР°Р·РєР° VIP */
         .vip-alert {
             background: #f39c12;
             color: #fff;
@@ -285,169 +285,169 @@
 </head>
 <body>
     <div class="container">
-        <!-- Шапка -->
-        <div class="header">ФинСосо — Новостной портал</div>
+        <!-- РЁР°РїРєР° -->
+        <div class="header">Р¤РёРЅРЎРѕСЃРѕ вЂ” РќРѕРІРѕСЃС‚РЅРѕР№ РїРѕСЂС‚Р°Р»</div>
 
-        <!-- Меню -->
+        <!-- РњРµРЅСЋ -->
         <div class="nav">
-            <a href="#">Главная</a>
-            <a href="#">Новости</a>
-            <a href="#">Объявления</a>
-            <a href="#">Фирмы</a>
-            <a href="#">Работа</a>
-            <a href="#">Блоги</a>
-            <a href="#">Форум</a>
-            <a href="#">Фото</a>
-            <a href="#">Пользователи</a>
-            <a href="#">Викторина</a>
-            <a href="#">Конкурсы</a>
-            <a href="#">Игры</a>
+            <a href="#">Р“Р»Р°РІРЅР°СЏ</a>
+            <a href="#">РќРѕРІРѕСЃС‚Рё</a>
+            <a href="#">РћР±СЉСЏРІР»РµРЅРёСЏ</a>
+            <a href="#">Р¤РёСЂРјС‹</a>
+            <a href="#">Р Р°Р±РѕС‚Р°</a>
+            <a href="#">Р‘Р»РѕРіРё</a>
+            <a href="#">Р¤РѕСЂСѓРј</a>
+            <a href="#">Р¤РѕС‚Рѕ</a>
+            <a href="#">РџРѕР»СЊР·РѕРІР°С‚РµР»Рё</a>
+            <a href="#">Р’РёРєС‚РѕСЂРёРЅР°</a>
+            <a href="#">РљРѕРЅРєСѓСЂСЃС‹</a>
+            <a href="#">РРіСЂС‹</a>
         </div>
 
-        <!-- Баннер -->
+        <!-- Р‘Р°РЅРЅРµСЂ -->
         <div class="banner">
-            <!-- Поиск -->
+            <!-- РџРѕРёСЃРє -->
             <div class="search">
-                <input type="text" placeholder="Что ищем?">
+                <input type="text" placeholder="Р§С‚Рѕ РёС‰РµРј?">
                 <button>??</button>
             </div>
 
-            <!-- Логин -->
+            <!-- Р›РѕРіРёРЅ -->
             <div class="login-box">
-                <a href="#">Регистрация</a> | <a href="#">Забыли пароль?</a><br>
-                <input type="text" placeholder="Логин">
-                <input type="password" placeholder="Пароль">
+                <a href="#">Р РµРіРёСЃС‚СЂР°С†РёСЏ</a> | <a href="#">Р—Р°Р±С‹Р»Рё РїР°СЂРѕР»СЊ?</a><br>
+                <input type="text" placeholder="Р›РѕРіРёРЅ">
+                <input type="password" placeholder="РџР°СЂРѕР»СЊ">
                 <button>??</button>
             </div>
         </div>
 
-        <!-- Приветствие -->
+        <!-- РџСЂРёРІРµС‚СЃС‚РІРёРµ -->
         <div class="welcome">
-            ?? Добро пожаловать! <a href="#">Зарегистрируйтесь</a> и Вам станут доступны все функции портала.
+            ?? Р”РѕР±СЂРѕ РїРѕР¶Р°Р»РѕРІР°С‚СЊ! <a href="#">Р—Р°СЂРµРіРёСЃС‚СЂРёСЂСѓР№С‚РµСЃСЊ</a> Рё Р’Р°Рј СЃС‚Р°РЅСѓС‚ РґРѕСЃС‚СѓРїРЅС‹ РІСЃРµ С„СѓРЅРєС†РёРё РїРѕСЂС‚Р°Р»Р°.
         </div>
 
-        <!-- Основной контент -->
+        <!-- РћСЃРЅРѕРІРЅРѕР№ РєРѕРЅС‚РµРЅС‚ -->
         <div class="main-content">
 
-            <!-- Левая колонка -->
+            <!-- Р›РµРІР°СЏ РєРѕР»РѕРЅРєР° -->
             <div class="sidebar">
 
-                <!-- VIP объявления -->
+                <!-- VIP РѕР±СЉСЏРІР»РµРЅРёСЏ -->
                 <div class="sidebar-section">
-                    <h3>VIP объявления</h3>
+                    <h3>VIP РѕР±СЉСЏРІР»РµРЅРёСЏ</h3>
                     <div class="vip-alert">
-                        Нет объявлений для отображения.<br>
-                        <a href="#">Как повысить эффективность своего объявления?</a>
-                        <span class="more">все объявления »</span>
+                        РќРµС‚ РѕР±СЉСЏРІР»РµРЅРёР№ РґР»СЏ РѕС‚РѕР±СЂР°Р¶РµРЅРёСЏ.<br>
+                        <a href="#">РљР°Рє РїРѕРІС‹СЃРёС‚СЊ СЌС„С„РµРєС‚РёРІРЅРѕСЃС‚СЊ СЃРІРѕРµРіРѕ РѕР±СЉСЏРІР»РµРЅРёСЏ?</a>
+                        <span class="more">РІСЃРµ РѕР±СЉСЏРІР»РµРЅРёСЏ В»</span>
                     </div>
                 </div>
 
-                <!-- Рубрики объявлений -->
+                <!-- Р СѓР±СЂРёРєРё РѕР±СЉСЏРІР»РµРЅРёР№ -->
                 <div class="sidebar-section">
-                    <h3>Рубрики объявлений</h3>
+                    <h3>Р СѓР±СЂРёРєРё РѕР±СЉСЏРІР»РµРЅРёР№</h3>
                     <ul>
-                        <li><a href="#">Автомобили</a></li>
-                        <li><a href="#">Бытовая техника</a></li>
-                        <li><a href="#">Животные</a></li>
-                        <li><a href="#">Знакомства</a></li>
-                        <li><a href="#">Мебель</a></li>
-                        <li><a href="#">Недвижимость</a></li>
-                        <li><a href="#">Одежда, обувь</a></li>
-                        <li><a href="#">Работа</a></li>
-                        <li><a href="#">Услуги</a></li>
+                        <li><a href="#">РђРІС‚РѕРјРѕР±РёР»Рё</a></li>
+                        <li><a href="#">Р‘С‹С‚РѕРІР°СЏ С‚РµС…РЅРёРєР°</a></li>
+                        <li><a href="#">Р–РёРІРѕС‚РЅС‹Рµ</a></li>
+                        <li><a href="#">Р—РЅР°РєРѕРјСЃС‚РІР°</a></li>
+                        <li><a href="#">РњРµР±РµР»СЊ</a></li>
+                        <li><a href="#">РќРµРґРІРёР¶РёРјРѕСЃС‚СЊ</a></li>
+                        <li><a href="#">РћРґРµР¶РґР°, РѕР±СѓРІСЊ</a></li>
+                        <li><a href="#">Р Р°Р±РѕС‚Р°</a></li>
+                        <li><a href="#">РЈСЃР»СѓРіРё</a></li>
                     </ul>
                 </div>
 
-                <!-- Рубрики фотогалереи -->
+                <!-- Р СѓР±СЂРёРєРё С„РѕС‚РѕРіР°Р»РµСЂРµРё -->
                 <div class="sidebar-section">
-                    <h3>Рубрики фотогалереи</h3>
+                    <h3>Р СѓР±СЂРёРєРё С„РѕС‚РѕРіР°Р»РµСЂРµРё</h3>
                     <ul>
-                        <li><a href="#">Автомобили</a></li>
-                        <li><a href="#">Общий альбом</a></li>
+                        <li><a href="#">РђРІС‚РѕРјРѕР±РёР»Рё</a></li>
+                        <li><a href="#">РћР±С‰РёР№ Р°Р»СЊР±РѕРј</a></li>
                     </ul>
                 </div>
 
-                <!-- Новые конкурсы -->
+                <!-- РќРѕРІС‹Рµ РєРѕРЅРєСѓСЂСЃС‹ -->
                 <div class="sidebar-section">
-                    <h3>Новые конкурсы</h3>
-                    <img src="https://via.placeholder.com/230x100?text=Конкурс+на+фото" alt="Конкурс" style="width:100%; margin-top:5px;">
+                    <h3>РќРѕРІС‹Рµ РєРѕРЅРєСѓСЂСЃС‹</h3>
+                    <img src="https://via.placeholder.com/230x100?text=РљРѕРЅРєСѓСЂСЃ+РЅР°+С„РѕС‚Рѕ" alt="РљРѕРЅРєСѓСЂСЃ" style="width:100%; margin-top:5px;">
                 </div>
 
             </div>
 
-            <!-- Центральная колонка -->
+            <!-- Р¦РµРЅС‚СЂР°Р»СЊРЅР°СЏ РєРѕР»РѕРЅРєР° -->
             <div class="content">
 
-                <!-- Заголовок новостей -->
-                <div class="news-header">Новости</div>
+                <!-- Р—Р°РіРѕР»РѕРІРѕРє РЅРѕРІРѕСЃС‚РµР№ -->
+                <div class="news-header">РќРѕРІРѕСЃС‚Рё</div>
 
-                <!-- Главная новость -->
+                <!-- Р“Р»Р°РІРЅР°СЏ РЅРѕРІРѕСЃС‚СЊ -->
                 <div class="featured-news">
                     <div class="featured-image"></div>
                     <div class="featured-text">
                         <div class="news-item" style="background:#7f8c8d; color:white; padding:10px; margin-bottom:5px;">
-                            <img src="https://via.placeholder.com/60x60?text=Хоккей" alt="Хоккей">
+                            <img src="https://via.placeholder.com/60x60?text=РҐРѕРєРєРµР№" alt="РҐРѕРєРєРµР№">
                             <div>
-                                <div class="date">16 мая 2013</div>
-                                <div class="title">Словаки победили сборную США и вышли в плей-офф ЧМ-2013</div>
+                                <div class="date">16 РјР°СЏ 2013</div>
+                                <div class="title">РЎР»РѕРІР°РєРё РїРѕР±РµРґРёР»Рё СЃР±РѕСЂРЅСѓСЋ РЎРЁРђ Рё РІС‹С€Р»Рё РІ РїР»РµР№-РѕС„С„ Р§Рњ-2013</div>
                             </div>
                         </div>
                         <div class="news-item" style="background:#9b59b6; color:white; padding:10px; margin-bottom:5px;">
-                            <img src="https://via.placeholder.com/60x60?text=Демченко" alt="Демченко">
+                            <img src="https://via.placeholder.com/60x60?text=Р”РµРјС‡РµРЅРєРѕ" alt="Р”РµРјС‡РµРЅРєРѕ">
                             <div>
-                                <div class="date">16 мая 2013</div>
-                                <div class="title">Саночник Альберт Демченко испытал сочинскую трассу</div>
+                                <div class="date">16 РјР°СЏ 2013</div>
+                                <div class="title">РЎР°РЅРѕС‡РЅРёРє РђР»СЊР±РµСЂС‚ Р”РµРјС‡РµРЅРєРѕ РёСЃРїС‹С‚Р°Р» СЃРѕС‡РёРЅСЃРєСѓСЋ С‚СЂР°СЃСЃСѓ</div>
                             </div>
                         </div>
                         <div class="news-item" style="background:#34495e; color:white; padding:10px; margin-bottom:5px;">
-                            <img src="https://via.placeholder.com/60x60?text=Футбол" alt="Футбол">
+                            <img src="https://via.placeholder.com/60x60?text=Р¤СѓС‚Р±РѕР»" alt="Р¤СѓС‚Р±РѕР»">
                             <div>
-                                <div class="date">16 мая 2013</div>
-                                <div class="title">Футбол. Лига Европы. Объявлены стартовые составы</div>
+                                <div class="date">16 РјР°СЏ 2013</div>
+                                <div class="title">Р¤СѓС‚Р±РѕР». Р›РёРіР° Р•РІСЂРѕРїС‹. РћР±СЉСЏРІР»РµРЅС‹ СЃС‚Р°СЂС‚РѕРІС‹Рµ СЃРѕСЃС‚Р°РІС‹</div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Вкладки -->
+                <!-- Р’РєР»Р°РґРєРё -->
                 <div class="tabs">
-                    <a href="#" class="active">Новости спорта</a>
-                    <a href="#">Новости кино</a>
-                    <a href="#">Новости политики</a>
+                    <a href="#" class="active">РќРѕРІРѕСЃС‚Рё СЃРїРѕСЂС‚Р°</a>
+                    <a href="#">РќРѕРІРѕСЃС‚Рё РєРёРЅРѕ</a>
+                    <a href="#">РќРѕРІРѕСЃС‚Рё РїРѕР»РёС‚РёРєРё</a>
                 </div>
 
-                <!-- Новости -->
+                <!-- РќРѕРІРѕСЃС‚Рё -->
                 <div class="news-grid" style="display:grid; grid-template-columns: repeat(3, 1fr); gap:10px;">
                     <div class="news-item">
-                        <img src="https://via.placeholder.com/60x60?text=Терек" alt="Терек">
+                        <img src="https://via.placeholder.com/60x60?text=РўРµСЂРµРє" alt="РўРµСЂРµРє">
                         <div>
-                            <div class="date">31 мая 2013</div>
-                            <div class="title">"Терек" получил нового тренера</div>
+                            <div class="date">31 РјР°СЏ 2013</div>
+                            <div class="title">"РўРµСЂРµРє" РїРѕР»СѓС‡РёР» РЅРѕРІРѕРіРѕ С‚СЂРµРЅРµСЂР°</div>
                         </div>
                     </div>
                     <div class="news-item">
-                        <img src="https://via.placeholder.com/60x60?text=Спартак" alt="Спартак">
+                        <img src="https://via.placeholder.com/60x60?text=РЎРїР°СЂС‚Р°Рє" alt="РЎРїР°СЂС‚Р°Рє">
                         <div>
-                            <div class="date">31 мая 2013</div>
-                            <div class="title">"Спартак" предлагает шесть миллионов евро за Тино Косту</div>
+                            <div class="date">31 РјР°СЏ 2013</div>
+                            <div class="title">"РЎРїР°СЂС‚Р°Рє" РїСЂРµРґР»Р°РіР°РµС‚ С€РµСЃС‚СЊ РјРёР»Р»РёРѕРЅРѕРІ РµРІСЂРѕ Р·Р° РўРёРЅРѕ РљРѕСЃС‚Сѓ</div>
                         </div>
                     </div>
                     <div class="news-item">
-                        <img src="https://via.placeholder.com/60x60?text=Олимпиада" alt="Олимпиада">
+                        <img src="https://via.placeholder.com/60x60?text=РћР»РёРјРїРёР°РґР°" alt="РћР»РёРјРїРёР°РґР°">
                         <div>
-                            <div class="date">31 мая 2013</div>
-                            <div class="title">Покурить на Олимпиаде в Сочи не удастся</div>
+                            <div class="date">31 РјР°СЏ 2013</div>
+                            <div class="title">РџРѕРєСѓСЂРёС‚СЊ РЅР° РћР»РёРјРїРёР°РґРµ РІ РЎРѕС‡Рё РЅРµ СѓРґР°СЃС‚СЃСЏ</div>
                         </div>
                     </div>
                     <div class="news-item">
-                        <img src="https://via.placeholder.com/60x60?text=Карлос" alt="Карлос">
+                        <img src="https://via.placeholder.com/60x60?text=РљР°СЂР»РѕСЃ" alt="РљР°СЂР»РѕСЃ">
                         <div>
-                            <div class="date">31 мая 2013</div>
-                            <div class="title">Роберто Карлос договорился о контракте с турецким клубом</div>
+                            <div class="date">31 РјР°СЏ 2013</div>
+                            <div class="title">Р РѕР±РµСЂС‚Рѕ РљР°СЂР»РѕСЃ РґРѕРіРѕРІРѕСЂРёР»СЃСЏ Рѕ РєРѕРЅС‚СЂР°РєС‚Рµ СЃ С‚СѓСЂРµС†РєРёРј РєР»СѓР±РѕРј</div>
                         </div>
                     </div>
                     <div class="news-item">
-                        <img src="https://via.placeholder.com/60x60?text=Кокорин" alt="Кокорин">
+                        <img src="https://via.placeholder.com/60x60?text=РљРѕРєРѕСЂРёРЅ" alt="РљРѕРєРѕСЂРёРЅ">
                         <div>
-                            <div class="date">31 мая 2013</div>
+                            <div class="date">31 РјР°СЏ 2013</div>
                             <div class="title">
