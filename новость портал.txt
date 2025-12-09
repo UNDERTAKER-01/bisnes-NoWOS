@@ -286,7 +286,7 @@
 <body>
     <div class="container">
         <!-- Шапка -->
-        <div class="header">ФинСосо — Новостной портал</div>
+        <div class="header">Российская биржа — Новостной портал</div>
 
         <!-- Меню -->
         <div class="nav">
@@ -451,3 +451,4 @@
                         <div>
                             <div class="date">31 мая 2013</div>
                             <div class="title">
+
